@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Hacker : MonoBehaviour
 {
-
     // Use this for initialization
     void Start()
     {
+        WriteOutMenu("Hello");
+    }
+
+    private static void WriteOutMenu(string greeting)
+    {
+        Terminal.ClearScreen();
         Terminal.WriteLine("Choose difficulty");
         Terminal.WriteLine("1 Easy");
         Terminal.WriteLine("2 Medium");
@@ -15,10 +20,9 @@ public class Hacker : MonoBehaviour
         Terminal.WriteLine("Enter your selection: ");
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnUserInput(string input)
     {
-
+        Terminal.WriteLine("The user typed " + input);
     }
 }
 
