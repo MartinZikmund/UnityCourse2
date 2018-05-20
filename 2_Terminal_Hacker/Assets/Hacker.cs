@@ -7,10 +7,10 @@ public class Hacker : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        WriteOutMenu("Hello");
+        WriteOutMenu();
     }
 
-    private static void WriteOutMenu(string greeting)
+    private static void WriteOutMenu()
     {
         Terminal.ClearScreen();
         Terminal.WriteLine("Choose difficulty");
@@ -22,7 +22,13 @@ public class Hacker : MonoBehaviour
 
     void OnUserInput(string input)
     {
-        Terminal.WriteLine("The user typed " + input);
+        if (input == "menu")
+        {
+            WriteOutMenu();
+        } else if (input == "007")
+        {
+            Terminal.WriteLine("Bond");
+        }        
     }
 }
 
