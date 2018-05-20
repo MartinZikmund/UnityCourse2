@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class Hacker : MonoBehaviour
 {
+    private int level;
+
+    enum Screen
+    {
+        MainMenu,
+        Password,
+        Win
+    };
+
+    private Screen currentScreen = Screen.MainMenu;
+
     // Use this for initialization
     void Start()
-    {
+    {        
         WriteOutMenu();
     }
 
@@ -25,10 +36,16 @@ public class Hacker : MonoBehaviour
         if (input == "menu")
         {
             WriteOutMenu();
-        } else if (input == "007")
+        }
+        else if (input == "007")
         {
             Terminal.WriteLine("Bond");
-        }        
+        }
+    }
+
+    void StartGame(int level)
+    {
+        Terminal.WriteLine("You have chosen level " + level);
     }
 }
 
