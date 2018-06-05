@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44768167, g: 0.49765706, b: 0.5753849, a: 1}
+  m_IndirectSpecularColor: {r: 0.44768202, g: 0.49765772, b: 0.5753854, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &348267534
+--- !u!1001 &191973594
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -152,10 +152,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 54810036423386074, guid: 275c33b36daf8b54b979d59fae5bca76,
+    - target: {fileID: 82203552804658160, guid: 275c33b36daf8b54b979d59fae5bca76,
         type: 2}
-      propertyPath: m_Mass
-      value: 0.09
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c2d29970c5a24a459df877d780cf852, type: 3}
+    - target: {fileID: 82203552804658160, guid: 275c33b36daf8b54b979d59fae5bca76,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 275c33b36daf8b54b979d59fae5bca76, type: 2}
@@ -299,11 +304,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4462315691656444, guid: 520489b8f41fa4d44a869941687ae854, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4462315691656444, guid: 520489b8f41fa4d44a869941687ae854, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -20
+      value: -31
       objectReference: {fileID: 0}
     - target: {fileID: 4462315691656444, guid: 520489b8f41fa4d44a869941687ae854, type: 2}
       propertyPath: m_LocalRotation.x
